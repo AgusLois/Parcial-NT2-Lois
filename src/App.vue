@@ -1,12 +1,26 @@
 <template>
-  <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
+  <div id="app" class="container-fluid mt-3">
+    <div class="jumbotron">
+      <h1>Parcial Nuevas Tecnologias 2</h1>
+      <br>
+      <Navbar />
+      <router-view></router-view>
+
+    </div>
   </div>
 </template>
+
+<script>
+
+import Navbar from './components/Navbar.vue'
+
+export default {
+  name: 'App',
+  components: {
+    Navbar
+  }
+}
+</script>
 
 <style>
 #app {
@@ -30,3 +44,4 @@ nav a.router-link-exact-active {
   color: #42b983;
 }
 </style>
+
